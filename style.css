@@ -1,1 +1,201 @@
 /* Style Here */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 30px;
+}
+.carts {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.cart {
+  border-right: 1px solid gray;
+  margin-left: 10px;
+}
+.search-icon {
+  width: 24px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 30px;
+}
+.logo h2 {
+  text-decoration: underline;
+}
+.logo h2 span {
+  color: #eaa706;
+  text-decoration: underline;
+}
+.links {
+  display: flex;
+  gap: 20px;
+}
+.links li {
+  list-style: none;
+}
+.hamburger-menu {
+  display: none;
+}
+
+/* Landing Page */
+.landing {
+  width: 100%;
+}
+.wrapper {
+  background-color: #ededed;
+  margin: 10px 30px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 40px;
+}
+.chair img {
+  width: 450px;
+}
+.text-content h3 {
+  font-weight: 500;
+  margin-bottom: 10px;
+  letter-spacing: 5px;
+}
+.text-content h1 {
+  font-weight: 800;
+  font-size: 40px;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+.price {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.price span {
+  color: #eaa706;
+}
+
+/* Paragraph Below Landing */
+.text_paragraph {
+  text-align: center;
+  margin: 50px 80px;
+}
+
+/* Services */
+.service {
+  margin: 50px 90px;
+  display: flex;
+  justify-content: space-between;
+}
+.service_components h3{
+  margin: 8px 0;
+
+}
+.border_bottom {
+  border-bottom: 2.5px solid #eaa706;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+
+/* Service image */
+.service_image {
+  display: flex;
+  margin: 10px 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Products */
+.products .newest {
+  text-align: center;
+  margin-top: 40px;
+}
+.border_bottom_two{
+  border-bottom: 2.5px solid #eaa706;
+  width: 150px;
+  margin: 0 auto;
+}
+.product_container {
+  margin: 30px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.product_chair {
+  width: 300px;
+  height: 400px;
+  background-color: rgb(207, 203, 203);
+  padding: 20px 0;
+}
+.product_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product_chair .product_price {
+  font-weight: 500;
+  margin-top: 40px;
+}
+.product_chair h3 {
+  margin: 5px 0;
+}
+
+
+
+@media (max-width: 768px) {
+  .customer p {
+    font-size: 12px;
+  }
+  .carts p {
+    font-size: 12px;
+  }
+  .search-icon {
+    width: 18px;
+  }
+  .logo h2 {
+    font-size: 18px;
+  }
+  .links li {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .chair img {
+    width: 350px;
+  }
+  .service {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .service_image {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .product_container {
+    flex-direction: column;
+    gap: 160px;
+    align-items: center;
+  }
+}
